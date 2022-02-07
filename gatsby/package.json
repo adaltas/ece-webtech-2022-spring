@@ -25,7 +25,7 @@
     "gatsby-plugin-typography": "^3.13.0",
     "gatsby-remark-images": "^5.10.0",
     "gatsby-remark-prismjs": "^5.10.0",
-    "gatsby-remark-title-to-frontmatter": "^1.1.4",
+    "gatsby-remark-title-to-frontmatter": "1.1.4",
     "gatsby-source-filesystem": "^3.13.0",
     "gatsby-transformer-sharp": "^3.13.0",
     "glamor": "^2.20.40",
