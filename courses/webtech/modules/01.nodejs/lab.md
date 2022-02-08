@@ -80,8 +80,10 @@ Commit changes to Git repository:
 
 ```bash
 git add .
-git commit -m "initial"
+git commit -m "chore: initial"
 ```
+
+> Note! Why `chore:` is in the commit message? Learn and always follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification to write proper commit messages. It will provide you with more efficiency when building real applications, read more about the usage of Conventional Commits in [this article](https://www.adaltas.com/en/2021/02/02/js-monorepos-commits-changelog/).
 
 ## Part 2. Create a simple Node.js script 
 
