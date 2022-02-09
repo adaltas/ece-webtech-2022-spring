@@ -319,9 +319,9 @@ Tired of restarting your webserver after every modification of the source code? 
 Run: 
 
 ```shell
-npm i --save nodemon
+npm i --save-dev nodemon
 # or
-yarn add nodemon
+yarn add --dev nodemon
 # then
 ./node_modules/.bin/nodemon index.js
 ```
