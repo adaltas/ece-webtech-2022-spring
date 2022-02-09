@@ -3,7 +3,7 @@ title: Web Technologies
 authors:
 - Sergei Kudinov <sergei@adaltas.com>
 school: ECE
-period: Fall 2020
+period: Spring 2022
 feature: ./feature/index.png
 ---
 
