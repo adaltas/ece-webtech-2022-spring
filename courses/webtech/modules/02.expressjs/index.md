@@ -3,23 +3,23 @@ date: 2020-10-22
 duration: 3 hours
 ---
 
-# Express.js
+# Express framework
 
-The course will introduce Node.JS frameworks and focus on ExpressJS to write a web application that exposes REST services and renders HTML pages.
+The course will introduce Node.js frameworks and focus on Express to write a web application that exposes REST services and renders HTML pages.
 
-## What is ExpressJS ?
+## What is Express?
 
 * Minimalist framework for NodeJS apps
 * Provides features for web app development
 * Create robust APIs
 * Functions to expose a front end
 
-[ExpressJS guide](https://expressjs.com/en/guide/routing.html)
+[Express guide](https://expressjs.com/en/guide/routing.html)
 
-## What’s an API ?
+## What’s an API?
 
 * Application Programming Interface
-* In web: REST
+* In web: REST API
   * Expose a set of HTTP routes
   * Use HTTP verbs (GET / POST / PUT / DELETE)
   * Client connects to communicate
@@ -27,23 +27,23 @@ The course will introduce Node.JS frameworks and focus on ExpressJS to write a w
 
 REST API example: https://petstore.swagger.io/
 
-## How to use an API ?
+## How to use an API?
 
 * Combination of two sides:
-  * Back-end: rest api
+  * Back-end: REST API
   * Front-end: web pages w/ JS, mobile app, …
-* ExpressJS brings both for the web !
+* Express brings both for the web!
 
 ## Create a basic server
 
-* Manually: use `node-http`
-* With express:
+* Manually: use Node.js `http` module
+* With Express:
 
 ```javascript
 const express = require('express')
 const app = express()
 
-app.set('port', 1337)
+app.set('port', 8080)
 
 app.listen(
   app.get('port'), 
@@ -53,7 +53,7 @@ app.listen(
 
 ## Routing
 
-* Manually: parse the url and apply corresponding logic
+* Manually: parse the URL and apply corresponding logic
 * With Express:
 
 ```javascript
@@ -76,7 +76,7 @@ app
 
 ## Routing
 
-You can add parameters in the routes :
+You can add parameters in the routes:
 
 ```javascript
 app.get(
@@ -97,7 +97,4 @@ app.get(
 ## Other tools for testing API
 
 * [Swagger Inspector](https://inspector.swagger.io)
-* `curl` bush command:
-  ```shell
-  curl 
-  ```
+* `curl` Bash command
