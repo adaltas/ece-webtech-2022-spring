@@ -1,5 +1,4 @@
 ---
-date: 2020-10-22
 duration: 3 hours
 ---
 
