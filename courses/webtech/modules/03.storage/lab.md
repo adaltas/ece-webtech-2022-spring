@@ -34,10 +34,10 @@ The database model is made of 3 entities:
 - `messages`
 
 The relationships are as follow:
+
 - `channels` have 0 or more `messages`
 - `channels` have 1 or more `users`
 - `messages` have a single author (user)
-- no need for a user to list the messages he sent
 
 Assuming that JS objects have sorted keys, this is a representation of the key-value storage:
 
@@ -52,18 +52,24 @@ Assuming that JS objects have sorted keys, this is a representation of the key-v
     "password": "32u0fjioer"
   },
   "channel:1902": {
-    "name": "Channel 1"
+    "name": "Channel 1",
+    "users": [
+      3920, 3002
+    ]
   },
-  "channel:1902:message:1288329299": {
+  "channel:9302": {
+    "name": "Channel 2",
+    "users": [
+      3920, 3002
+    ]
+  },
+  "message:1902:123456789907": {
     "author": "3920",
     "content": "ping"
   },
-  "channel:1902:message:1288339049": {
+  "message:1902:123456790000": {
     "author": "3002",
     "content": "pong"
-  },
-  "channel:9302": {
-    "name": "Channel 2"
   }
 }
 ```
