@@ -1,7 +1,7 @@
 
 # Lab
 
-A basic React application created with [`create-react-app`](https://create-react-app.dev/) is provided in the [lab](./lab) folder. It is a similar application started during the class session, it runs a page with the ability to read and write messages into a channel. In this lab, you will make a few improvements.
+A basic React application created with [`create-react-app`](https://create-react-app.dev/) is provided in the **corrections** repository specific to your group. It is a similar application started during the class session, it runs a page with the ability to read and write messages into a channel. In this lab, you will make a few improvements.
 
 ## Objectives
 
