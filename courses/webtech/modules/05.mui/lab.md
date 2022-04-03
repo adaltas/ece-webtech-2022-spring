@@ -21,6 +21,6 @@ Note, to switch from the "login" to the "channel" view, a user should simply cli
 
 ## 3. React layout/navigation components (hard level)
 
-Once a user has logged in, it would be nice to adjust the UI according to the screen size. While it makes sense to always display the list of channels on the right side on a desktop screen, it is unworkable on a small screen size such as the one of a phone.
+Once a user has logged in, it would be nice to adjust the UI according to the screen size. While it makes sense to always display the list of channels on the left side on a desktop screen, it is unworkable on a small screen size such as the one of a phone.
 
 For a small screen, the channel list shall be hidden until a "menu" icon is clicked. It must then appear in the form of a drawer. The MUI library provides a "drawer" component that comes in multiple flavors. The responsible drawer seems to correspond to our need, integrate it between the `Channel`, `Channels`, and `Main` components of the application.
