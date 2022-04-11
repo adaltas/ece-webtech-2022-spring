@@ -22,6 +22,15 @@ The course assignment is consist of:
 2. Project
 3. MCQ exam (multiple choice questions)
 
+## Supporting materials (corrections)
+
+Each student group is associated (access is individually granted to [all students](https://github.com/adaltas/ece-webtech-2022-spring/discussions/1)) with a correction repository containing supporting materials for each lab work and its corrections:
+
+- [Ing4 apprenti SI 01](https://github.com/adaltas/ece-webtech-2022-spring-gr01app/)
+- [Ing4 apprenti SI 02](https://github.com/adaltas/ece-webtech-2022-spring-gr02app/)
+
+The repositories use Git tags to make it easy to navigate between labs and corrections. They also use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification with clean separation of commits, and students are required to carefully read and understand all commits.
+
 ## Usage
 
 ### Reading slides' content
