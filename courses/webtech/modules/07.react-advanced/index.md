@@ -18,29 +18,27 @@ When React applications grow and gain more additional complexity, sharing data b
 This is how a state is used without a React context.
 
 ```js
+// Child component
 const Greeting = ({user}) => {
   return (
     <span>Hello (user ? {user.username} : 'anonymous')</span>
   )
 }
+
+// Intermediate component
 const Box = ({user}) => {
   return (
     <Greeting user={user} />
   )
 }
+
+// Parent component
 const Counter = ({props} => {
-  const [count, setCount] = useState(0);
-  const increment = (inc) => {
-    setCount(count+inc)
-  }
   const [user, setUser] = useState(null);
   return (
     <div>
-      <span>{count}</span>
-      <button onClick={(e) => {increment(1)}}>Incr by 1</button>
-      <button onClick={(e) => {increment(2)}}>Incr by 2</button>
       <Box user={user} />
-      <button onClick={(e) => {setUser({username: 'david'})}}>Login</button>
+      <button onClick={(e) => setUser('david')}>Login</button>
     </div>
   )
 })
@@ -99,14 +97,9 @@ export default Context
 export const ContextProvider = ({
   children
 }) => {
-  const [count, setCount] = useState(0)
   const [user, setUser] = useState(null)
   return (
     <Context.Provider value={{
-      count: count,
-      setCount: (incr) => {
-        setCount(count + incr)
-      },
       user: user,
       login: (user) => {
         if(user && !user.email){
@@ -133,31 +126,28 @@ import {ContextProvider} from './Context'
 ReactDOM.render(
   <React.StrictMode>
     <ContextProvider>
-      <CookiesProvider>
-        <ThemeProvider theme={theme}>
-          <App />
-        </ThemeProvider>
-      </CookiesProvider>
+      <App />
     </ContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
 ```
 
-### Example - Consumer hook
+### Example - Child component with a consumer hook
+
 
 ```js
 import {useContext} from 'react';
 import {Context} from './Context'
 
-const LoggedOut () => {
+const LoggedOut = () => {
   const {login} = useContext(Context)
   return (
     <button onclick={()=>{ login('guest') }}>Login</button>
   )
 }
 
-const LoggedIn () => {
+const LoggedIn = () => {
   const {user, logout} = useContext(Context)
   return (
     <div>
@@ -167,10 +157,12 @@ const LoggedIn () => {
   )
 }
 
-export default () => {
+const Login = () => {
   const {user} = useContext(Context)
   return user ? <LoggedIn /> : <LoggedOut />
 })
+
+export default Login
 ```
 
 ## React Router
