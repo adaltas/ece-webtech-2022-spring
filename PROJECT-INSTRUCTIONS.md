@@ -29,7 +29,7 @@ The following requirements **must be strictly followed**:
   * `back-end` - the back-end API
   * `front-end` - the front-end application
   * `dex` - the Dex configuration
-* Use the README.md file provided in the correction repository as a template for your own readme.
+* Use the [README-TEMPLATE.md](./README-TEMPLATE.md) file as a template for your own readme.
 * The readme must include the tasks you did with your **comments and self-evaluation**:
   * **Comments** describes what you have done, why and how you implement features, instructions, recommendations, important notes... **All must be concise**. The goal is to provide the maximum of context for the correction while accelerating the reviewing process.
   * **Self-assessment** serves to assist the teacher in evaluating the projects, it should be objective.
