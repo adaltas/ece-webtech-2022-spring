@@ -3,7 +3,9 @@
 
 ## Deadline
 
-...
+April 24, 2022
+
+Required amount of points: 40 (it will be converted to a grade out of 20)
 
 ## Introduction
 
