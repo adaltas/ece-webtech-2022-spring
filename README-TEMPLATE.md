@@ -81,6 +81,9 @@
 * Code quality
   * Self-evaluation:
   * Comments:
+* Environment variables
+  * Self-evaluation:
+  * Comments:
 * Design, UX
   * Self-evaluation:
   * Comments:
