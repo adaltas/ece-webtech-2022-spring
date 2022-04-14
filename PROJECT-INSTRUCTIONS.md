@@ -36,6 +36,7 @@ The following requirements **must be strictly followed**:
   * **Comments** describes what you have done, why and how you implement features, instructions, recommendations, important notes... **All must be concise**. The goal is to provide the maximum of context for the correction while accelerating the reviewing process.
   * **Self-assessment** serves to assist the teacher in evaluating the projects, it should be objective.
 * The project must be a **professional** grade. You must think about everything expected from a project in production including securing sensitive information, error management, environment variables...
+* **Feel free to leave your feedback in your README.md about about the course, its structure, content, methods of conducting, advantages and disadvantages...**
 
 It is allowed to import the default application provided in the [correction repository](./README.md#supporting-materials-corrections) and start from there, however it is recommended to continue working on the project used for the lab works.
 
